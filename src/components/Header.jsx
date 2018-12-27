@@ -11,12 +11,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  ul {
-    list-style: none;
-    padding: 0;
-    background-color: ${color.HEADER_BG};
-  }
+  height: ${offset.HEADER_HEIGHT};
 
   li {
     display: inline-block;
@@ -34,9 +29,8 @@ const HeaderLogo = styled.img`
 `;
 
 const HeaderLink = styled(Link)`
-  background-color: ${color.HEADER_BG};
   text-decoration: none;
-  color: lightblue;
+  color: ${color.LINK};
 
   &:hover {
     text-decoration: underline;
