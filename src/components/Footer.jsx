@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from '@reach/router';
 import styled from '@emotion/styled';
 
 import color from './../styles/color';
@@ -21,14 +22,29 @@ const FooterContainer = styled.footer`
   }
 `;
 
+const FooterLink = styled(Link)`
+  text-decoration: none;
+  color: ${color.LINK};
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 class Footer extends Component {
   render() {
     return (
       <FooterContainer className="footer">
         <ul className="footer__links">
-          <li className="footer__link">footer link 1</li>
-          <li className="footer__link">footer link 2</li>
-          <li className="footer__link">footer link 3</li>
+          <li className="footer__link">
+            <FooterLink to="/">footer link 1</FooterLink>
+          </li>
+          <li className="footer__link">
+            <FooterLink to="/">footer link 2</FooterLink>
+          </li>
+          <li className="footer__link">
+            <FooterLink to="/">footer link 3</FooterLink>
+          </li>
         </ul>
       </FooterContainer>
     );
