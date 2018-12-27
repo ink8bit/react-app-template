@@ -59,3 +59,15 @@ typings/
 
 # next.js build output
 .next
+
+# generated folders
+dist
+build
+.cache
+
+# macOS preview
+.DS_Store
+
+# editors
+.vscode
+.idea
