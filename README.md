@@ -1,6 +1,6 @@
 # 🚀 React starter
 
-It's React setup that I use everyday.
+It's React setup that I use every day.
 
 ## ⚙️ Setup
 
@@ -26,10 +26,11 @@ npm run build
 
 ## 📦Built with
 
-[Parcel](https://parceljs.org)
-[Jest](https://jestjs.io/)
-[React](https://reactjs.org/)
-[React loadable](https://github.com/jamiebuilds/react-loadable)
-[Reach router](https://reach.tech/router)
+- [Parcel](https://parceljs.org)
+- [Jest](https://jestjs.io/)
+- [React](https://reactjs.org/)
+- [React loadable](https://github.com/jamiebuilds/react-loadable)
+- [Reach router](https://reach.tech/router)
+- [Emotion](https://emotion.sh/)
 
 ## 👻Features

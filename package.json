@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-plugin-emotion": "^10.0.5",
     "eslint": "^5.11.1",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",
@@ -36,6 +37,8 @@
     "react-test-renderer": "^16.7.0"
   },
   "dependencies": {
+    "@emotion/core": "^10.0.5",
+    "@emotion/styled": "^10.0.5",
     "@reach/router": "^1.2.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
