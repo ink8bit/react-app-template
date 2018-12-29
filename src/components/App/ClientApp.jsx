@@ -4,8 +4,8 @@ import { Router } from '@reach/router';
 import GlobalStyles from './GlobalStyles.jsx';
 
 import Header from './../../components/Header/Header.jsx';
-import Content from './../Content.jsx';
-import Footer from './../Footer.jsx';
+import Content from './../Content/Content.jsx';
+import Footer from './../Footer/Footer.jsx';
 
 class App extends Component {
   render() {

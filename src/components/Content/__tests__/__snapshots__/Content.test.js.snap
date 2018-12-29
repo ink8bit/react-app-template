@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<main
+  className="content css-1provnf"
+>
+  <h1
+    className="css-681owv"
+  />
+</main>
+`;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
 
-import offset from './../styles/offset';
+import offset from './../../styles/offset';
 
 const Main = styled.main`
   padding: 10px ${offset.PADDING_COMMON};
