@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Link } from '@reach/router';
 import styled from '@emotion/styled';
 
-import color from './../styles/color';
-import offset from './../styles/offset';
+import color from '../../styles/color';
+import offset from '../../styles/offset';
 
 const HeaderContainer = styled.header`
   background-color: ${color.HEADER_BG};

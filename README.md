@@ -2,6 +2,8 @@
 
 It's React setup that I use every day.
 
+> I don't use `babel@7.x` for now because of some issues with `jest` and `React`.
+
 ## ⚙️ Setup
 
 ```sh
@@ -23,6 +25,10 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Compatible browsers
+
+[browserl.ist](https://browserl.ist/?q=%3E0.3%25%2C+not+ie+10%2C+not+ie+11%2C+not+op_mini+all)
 
 ## 📦Built with
 

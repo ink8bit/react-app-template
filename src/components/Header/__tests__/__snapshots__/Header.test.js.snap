@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<header
+  className="css-11m34uo"
+>
+  <img
+    alt="logo"
+    className="css-24f8mu"
+    src=""
+    title="logo"
+  />
+  <ul>
+    <li>
+      <a
+        aria-current="page"
+        className="css-1bdxinm"
+        href="/"
+        onClick={[Function]}
+      >
+        Main
+      </a>
+    </li>
+    <li>
+      <a
+        className="css-1bdxinm"
+        href="/search"
+        onClick={[Function]}
+      >
+        Search
+      </a>
+    </li>
+  </ul>
+</header>
+`;
