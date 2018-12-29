@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from '@reach/router';
 import styled from '@emotion/styled';
+import Loadable from 'react-loadable';
 
 import color from '../../styles/color';
 import offset from '../../styles/offset';
+import Modal from './../Modal/Modal.jsx';
 
 const HeaderContainer = styled.header`
   background-color: ${color.HEADER_BG};
@@ -37,11 +39,35 @@ const HeaderLink = styled(Link)`
   }
 `;
 
+const loading = () => <span>loading...</span>;
+const LoadableContent = Loadable({
+  loader: () => import('./../Modal/ModalContent.jsx'),
+  loading,
+});
+
 class Header extends Component {
+  state = {
+    showModal: false,
+  };
+
+  toggleModal = () => {
+    this.setState({
+      showModal: !this.state.showModal,
+    });
+  };
+
   render() {
+    const { showModal } = this.state;
+
+    const ModalLayout = showModal ? (
+      <Modal>
+        <LoadableContent toggleModal={this.toggleModal} name={name} />
+      </Modal>
+    ) : null;
+
     return (
       <HeaderContainer>
-        <HeaderLogo src="" alt="logo" title="logo" />
+        <HeaderLogo onClick={this.toggleModal} src="" alt="logo" title="logo" />
         <ul>
           <li>
             <HeaderLink to="/">Main</HeaderLink>
@@ -49,6 +75,7 @@ class Header extends Component {
           <li>
             <HeaderLink to="/search">Search</HeaderLink>
           </li>
+          {ModalLayout}
         </ul>
       </HeaderContainer>
     );

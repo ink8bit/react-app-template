@@ -25,6 +25,11 @@ class GlobalStyles extends Component {
             margin: 0;
             background: transparent;
           }
+          button {
+            padding: 0;
+            margin: 0;
+            border: none;
+          }
         `}
       />
     );
