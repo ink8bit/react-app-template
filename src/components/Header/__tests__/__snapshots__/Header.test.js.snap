@@ -7,6 +7,7 @@ exports[`snapshot 1`] = `
   <img
     alt="logo"
     className="css-24f8mu"
+    onClick={[Function]}
     src=""
     title="logo"
   />

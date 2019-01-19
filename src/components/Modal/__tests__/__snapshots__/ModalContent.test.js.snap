@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<div
+  className="css-1rvx2q7"
+>
+  <h1>
+    This is an example of a modal window
+  </h1>
+  <div
+    className="buttons"
+  >
+    <button
+      className="button"
+    >
+      Ok
+    </button>
+    <button
+      className="button"
+    >
+      Close
+    </button>
+  </div>
+</div>
+`;
