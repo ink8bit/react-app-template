@@ -11,6 +11,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
+    "prebuild": "npm audit && npm run lint && npm run test",
     "build": "parcel build src/index.html",
     "lint": "eslint --fix \"**/*.{js,jsx}\"",
     "test": "jest",
