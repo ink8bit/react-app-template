@@ -24,6 +24,12 @@ npm run dev
 npm run build
 ```
 
+## Run production version
+
+```sh
+npm start
+```
+
 ## Compatible browsers
 
 [browserl.ist](https://browserl.ist/?q=%3E0.3%25%2C+not+ie+10%2C+not+ie+11%2C+not+op_mini+all)
