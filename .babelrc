@@ -8,10 +8,13 @@
       }
     ]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties", "dynamic-import-node"],
+  "plugins": ["@babel/plugin-proposal-class-properties"],
   "env": {
     "development": {
-      "plugins": ["@babel/plugin-proposal-class-properties", "dynamic-import-node"]
+      "plugins": ["@babel/plugin-proposal-class-properties"]
+    },
+    "test": {
+      "plugins": ["@babel/plugin-proposal-class-properties", "babel-plugin-dynamic-import-node"]
     }
   }
 }

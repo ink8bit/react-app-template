@@ -39,10 +39,10 @@ const HeaderLink = styled(Link)`
   }
 `;
 
-const loading = () => <span>loading...</span>;
+const Loading = () => <span>loading...</span>;
 const LoadableContent = Loadable({
   loader: () => import('./../Modal/ModalContent.jsx'),
-  loading,
+  loading: Loading,
 });
 
 class Header extends Component {
