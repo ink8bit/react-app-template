@@ -8,14 +8,10 @@
       }
     ]
   ],
-  "plugins": ["@babel/plugin-proposal-class-properties", "emotion", "dynamic-import-node"],
+  "plugins": ["@babel/plugin-proposal-class-properties", "dynamic-import-node"],
   "env": {
     "development": {
-      "plugins": [
-        "@babel/plugin-proposal-class-properties",
-        ["emotion", { "sourceMap": true }],
-        "dynamic-import-node"
-      ]
+      "plugins": ["@babel/plugin-proposal-class-properties", "dynamic-import-node"]
     }
   }
 }
