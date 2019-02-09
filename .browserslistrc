@@ -1,6 +1,4 @@
-# >0.3%
-# not ie 10
-# not ie 11
-# not op_mini all
-
-last 2 Chrome versions
+>0.3%
+not ie 10
+not ie 11
+not op_mini all
