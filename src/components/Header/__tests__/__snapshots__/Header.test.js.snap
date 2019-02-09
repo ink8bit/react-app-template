@@ -2,11 +2,11 @@
 
 exports[`snapshot 1`] = `
 <header
-  className="css-11m34uo"
+  className="css-1ykblop-HeaderContainer evixkrx0"
 >
   <img
     alt="logo"
-    className="css-24f8mu"
+    className="css-pduwnx-HeaderLogo evixkrx1"
     onClick={[Function]}
     src=""
     title="logo"
@@ -15,7 +15,7 @@ exports[`snapshot 1`] = `
     <li>
       <a
         aria-current="page"
-        className="css-1bdxinm"
+        className="css-1paqplz-HeaderLink evixkrx2"
         href="/"
         onClick={[Function]}
       >
@@ -24,7 +24,7 @@ exports[`snapshot 1`] = `
     </li>
     <li>
       <a
-        className="css-1bdxinm"
+        className="css-1paqplz-HeaderLink evixkrx2"
         href="/search"
         onClick={[Function]}
       >

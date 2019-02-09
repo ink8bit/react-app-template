@@ -1,14 +1,21 @@
 {
   "presets": [
-    "react",
+    "@babel/preset-react",
     [
-      "env",
+      "@babel/preset-env",
       {
-        "targets": {
-          "browsers": [">0.3%", "not ie 10", "not ie 11", "not op_mini all"]
-        }
+        "useBuiltIns": "entry"
       }
     ]
   ],
-  "plugins": ["transform-class-properties", "dynamic-import-node"]
+  "plugins": ["@babel/plugin-proposal-class-properties", "emotion", "dynamic-import-node"],
+  "env": {
+    "development": {
+      "plugins": [
+        "@babel/plugin-proposal-class-properties",
+        ["emotion", { "sourceMap": true }],
+        "dynamic-import-node"
+      ]
+    }
+  }
 }

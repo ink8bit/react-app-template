@@ -2,7 +2,7 @@
 
 exports[`snapshot 1`] = `
 <footer
-  className="footer css-x5faea"
+  className="footer css-18v7l5t-FooterContainer e17n3gqg0"
 >
   <ul
     className="footer__links"
@@ -12,7 +12,7 @@ exports[`snapshot 1`] = `
     >
       <a
         aria-current="page"
-        className="css-1bdxinm"
+        className="css-1yyja4m-FooterLink e17n3gqg1"
         href="/"
         onClick={[Function]}
       >
@@ -24,7 +24,7 @@ exports[`snapshot 1`] = `
     >
       <a
         aria-current="page"
-        className="css-1bdxinm"
+        className="css-1yyja4m-FooterLink e17n3gqg1"
         href="/"
         onClick={[Function]}
       >
@@ -36,7 +36,7 @@ exports[`snapshot 1`] = `
     >
       <a
         aria-current="page"
-        className="css-1bdxinm"
+        className="css-1yyja4m-FooterLink e17n3gqg1"
         href="/"
         onClick={[Function]}
       >
