@@ -33,7 +33,37 @@ class Content extends Component {
     this.message = props.message;
   }
 
+  state = {
+    downloadImage: false,
+    image: {
+      author: 'Mar Bustos',
+      src:
+        'https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80',
+      link: 'https://unsplash.com/photos/ARVFsI-32Uk',
+    },
+  };
+
+  componentDidMount() {
+    const content = document.querySelector('.content__images');
+
+    if ('IntersectionObserver' in window) {
+      let lazyImageObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.setState({
+              downloadImage: true,
+            });
+          }
+        });
+      });
+
+      lazyImageObserver.observe(content);
+    }
+  }
+
   render() {
+    const { image: { link, author, src } = {}, downloadImage } = this.state;
+
     return (
       <Main className="content">
         <Title>{this.props.message}</Title>
@@ -46,21 +76,7 @@ class Content extends Component {
         </div>
 
         <ul className="content__images">
-          <Image
-            author="Mar Bustos"
-            src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80"
-            websiteLink="https://unsplash.com/photos/ARVFsI-32Uk"
-          />
-          <Image
-            author="John O'Nolan"
-            src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
-            websiteLink="https://unsplash.com/photos/6f_ANCcbj3o"
-          />
-          <Image
-            author="Thomas Lipke"
-            src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2006&q=80"
-            websiteLink="https://unsplash.com/photos/oIuDXlOJSiE"
-          />
+          {downloadImage ? <Image src={src} websiteLink={link} author={author} /> : 'no image'}
         </ul>
       </Main>
     );
