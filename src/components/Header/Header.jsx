@@ -10,10 +10,9 @@ import Modal from './../Modal/Modal.jsx';
 const HeaderContainer = styled.header`
   background-color: ${color.HEADER_BG};
   padding: 10px ${offset.PADDING_COMMON};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: ${offset.HEADER_HEIGHT};
+  display: flex;
+  justify-content: center;
 
   li {
     display: inline-block;
@@ -21,6 +20,15 @@ const HeaderContainer = styled.header`
 
   li + li {
     margin-left: 20px;
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1000px;
   }
 `;
 
@@ -67,16 +75,18 @@ class Header extends Component {
 
     return (
       <HeaderContainer>
-        <HeaderLogo onClick={this.toggleModal} src="" alt="logo" title="logo" />
-        <ul>
-          <li>
-            <HeaderLink to="/">Main</HeaderLink>
-          </li>
-          <li>
-            <HeaderLink to="/search">Search</HeaderLink>
-          </li>
-          {ModalLayout}
-        </ul>
+        <div className="header__wrapper">
+          <HeaderLogo onClick={this.toggleModal} src="" alt="logo" title="logo" />
+          <ul>
+            <li>
+              <HeaderLink to="/">Main</HeaderLink>
+            </li>
+            <li>
+              <HeaderLink to="/search">Search</HeaderLink>
+            </li>
+            {ModalLayout}
+          </ul>
+        </div>
       </HeaderContainer>
     );
   }

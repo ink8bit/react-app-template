@@ -2,35 +2,39 @@
 
 exports[`snapshot 1`] = `
 <header
-  className="css-11m34uo"
+  className="css-3vdj21"
 >
-  <img
-    alt="logo"
-    className="css-24f8mu"
-    onClick={[Function]}
-    src=""
-    title="logo"
-  />
-  <ul>
-    <li>
-      <a
-        aria-current="page"
-        className="css-1bdxinm"
-        href="/"
-        onClick={[Function]}
-      >
-        Main
-      </a>
-    </li>
-    <li>
-      <a
-        className="css-1bdxinm"
-        href="/search"
-        onClick={[Function]}
-      >
-        Search
-      </a>
-    </li>
-  </ul>
+  <div
+    className="header__wrapper"
+  >
+    <img
+      alt="logo"
+      className="css-24f8mu"
+      onClick={[Function]}
+      src=""
+      title="logo"
+    />
+    <ul>
+      <li>
+        <a
+          aria-current="page"
+          className="css-1bdxinm"
+          href="/"
+          onClick={[Function]}
+        >
+          Main
+        </a>
+      </li>
+      <li>
+        <a
+          className="css-1bdxinm"
+          href="/search"
+          onClick={[Function]}
+        >
+          Search
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>
 `;

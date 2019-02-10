@@ -2,10 +2,111 @@
 
 exports[`snapshot 1`] = `
 <main
-  className="content css-1provnf"
+  className="content css-j43ud8"
 >
   <h1
     className="css-681owv"
   />
+  <div
+    className="content__text"
+  >
+    <p>
+      Open network panel
+    </p>
+    <p>
+      Scroll down
+    </p>
+    <p>
+      You will see how images are loading
+    </p>
+    <div
+      className="content__buffer"
+    />
+  </div>
+  <ul
+    className="content__images"
+  >
+    <li
+      className="css-pfp4t5"
+    >
+      <img
+        alt=""
+        className="image"
+        src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80"
+      />
+      <div
+        className="image__info"
+      >
+        <p
+          className="image__author"
+        >
+          Mar Bustos
+        </p>
+        <a
+          className="image__link"
+          href="https://unsplash.com/photos/ARVFsI-32Uk"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="unsplash.com link"
+        >
+          Unsplash link
+        </a>
+      </div>
+    </li>
+    <li
+      className="css-pfp4t5"
+    >
+      <img
+        alt=""
+        className="image"
+        src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
+      />
+      <div
+        className="image__info"
+      >
+        <p
+          className="image__author"
+        >
+          John O'Nolan
+        </p>
+        <a
+          className="image__link"
+          href="https://unsplash.com/photos/6f_ANCcbj3o"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="unsplash.com link"
+        >
+          Unsplash link
+        </a>
+      </div>
+    </li>
+    <li
+      className="css-pfp4t5"
+    >
+      <img
+        alt=""
+        className="image"
+        src="https://images.unsplash.com/photo-1516466723877-e4ec1d736c8a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2006&q=80"
+      />
+      <div
+        className="image__info"
+      >
+        <p
+          className="image__author"
+        >
+          Thomas Lipke
+        </p>
+        <a
+          className="image__link"
+          href="https://unsplash.com/photos/oIuDXlOJSiE"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="unsplash.com link"
+        >
+          Unsplash link
+        </a>
+      </div>
+    </li>
+  </ul>
 </main>
 `;
