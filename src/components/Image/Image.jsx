@@ -9,6 +9,10 @@ const ImageContainer = styled.li`
   object-fit: contain;
   margin-bottom: 50px;
 
+  & + & {
+    margin-top: 500px;
+  }
+
   img {
     width: 100%;
     background: lightgray;
@@ -37,7 +41,7 @@ class Image extends Component {
   render() {
     return (
       <ImageContainer>
-        <img className="image" src={this.props.src} alt="" />
+        <img className="image image_lazy" src="" data-src={this.props.src} alt="" />
         <div className="image__info">
           <p className="image__author">{this.props.author}</p>
           <a

@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const lazyImages = [...document.querySelectorAll('.lazy')];
+document.addEventListener('DOMContentLoaded', () => {
+  const lazyImages = [...document.querySelectorAll('.image_lazy')];
 
   if ('IntersectionObserver' in window) {
     const lazyImageObserver = new IntersectionObserver(entries => {
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (entry.isIntersecting) {
           const lazyImage = entry.target;
           lazyImage.src = lazyImage.dataset.src;
-          lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.remove('lazy');
+          // lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove('image_lazy');
           lazyImageObserver.unobserve(lazyImage);
         }
       });
