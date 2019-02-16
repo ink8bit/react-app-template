@@ -48,3 +48,8 @@ npx browserslist
 - [React loadable](https://github.com/jamiebuilds/react-loadable)
 - [Reach router](https://reach.tech/router)
 - [Emotion](https://emotion.sh/)
+
+## Features
+
+- lazy-loading images using [IntersectionObserver](https://developers.google.com/web/updates/2016/04/intersectionobserver)
+- React [Portals](https://reactjs.org/docs/portals.html) for modal window
