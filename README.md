@@ -48,6 +48,8 @@ npx browserslist
 - [React loadable](https://github.com/jamiebuilds/react-loadable)
 - [Reach router](https://reach.tech/router)
 - [Emotion](https://emotion.sh/)
+- [husky](https://github.com/typicode/husky)
+- [lint-staged](https://github.com/okonet/lint-staged)
 
 ## Features
 
