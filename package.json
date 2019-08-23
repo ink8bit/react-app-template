@@ -12,7 +12,7 @@
   "scripts": {
     "prestart": "npm run build",
     "start": "cd ./dist && npx serve",
-    "dev": "(npm audit || true) && parcel src/index.html",
+    "dev": "parcel src/index.html",
     "prebuild": "npm run clean && npm run lint && npm run test",
     "build": "parcel build src/index.html --no-source-maps",
     "clean": "rm -rf ./dist",
