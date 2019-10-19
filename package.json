@@ -5,13 +5,10 @@
   "repository": "git@github.com:ink8bit/react-starter.git",
   "author": "ink8bit <ink8bit@users.noreply.github.com>",
   "license": "MIT",
-  "engines": {
-    "node": "11.13.0"
-  },
   "private": true,
   "scripts": {
     "prestart": "npm run build",
-    "start": "cd ./dist && npx serve",
+    "start": "NODE_ENV=production cd ./dist && npx serve",
     "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
     "prebuild": "npm run lint && npm run test",
     "build": "webpack --config webpack.prod.js",
