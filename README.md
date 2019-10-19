@@ -42,7 +42,7 @@ npx browserslist
 
 ## Built with
 
-- [Parcel](https://parceljs.org)
+- [Webpack](https://webpack.js.org/)
 - [Jest](https://jestjs.io/)
 - [React](https://reactjs.org/)
 - [React loadable](https://github.com/jamiebuilds/react-loadable)
@@ -53,5 +53,5 @@ npx browserslist
 
 ## Features
 
-- lazy-loading images using [IntersectionObserver](https://developers.google.com/web/updates/2016/04/intersectionobserver)
-- React [Portals](https://reactjs.org/docs/portals.html) for modal window
+- Lazy-loading images using [IntersectionObserver](https://developers.google.com/web/updates/2016/04/intersectionobserver)
+- [React Portals](https://reactjs.org/docs/portals.html) for modal window
