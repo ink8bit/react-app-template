@@ -1,15 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<main
-  className="content css-j43ud8"
->
-  <h1
-    className="css-681owv"
-  />
-  <div
-    className="content__text"
-  >
+<main>
+  <h1 />
+  <div>
     <p>
       Open network panel
     </p>
@@ -19,13 +13,9 @@ exports[`snapshot 1`] = `
     <p>
       You will see how images are loading
     </p>
-    <div
-      className="content__buffer"
-    />
+    <div />
   </div>
-  <ul
-    className="content__images"
-  >
+  <ul>
     <li
       className="css-1w3z3hb"
     >

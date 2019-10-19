@@ -1,30 +1,7 @@
 import React, { Component } from 'react';
-import styled from '@emotion/styled';
 
 import Image from './../Image/Image.jsx';
-import offset from './../../styles/offset';
-
-const Main = styled.main`
-  padding: 10px ${offset.PADDING_COMMON};
-  height: calc(100% - ${offset.HEADER_HEIGHT} - ${offset.FOOTER_HEIGHT});
-  display: flex;
-  max-width: 1000px;
-  width: 100%;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-
-  .content__buffer {
-    height: 1000px;
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 20px;
-  margin: 0 0 20px;
-  padding: 0;
-  text-transform: capitalize;
-`;
+import s from './styles.css';
 
 class Content extends Component {
   constructor(props) {
@@ -35,17 +12,17 @@ class Content extends Component {
 
   render() {
     return (
-      <Main className="content">
-        <Title>{this.props.message}</Title>
+      <main className={s.content}>
+        <h1 className={s.contentTitle}>{this.props.message}</h1>
 
-        <div className="content__text">
+        <div>
           <p>Open network panel</p>
           <p>Scroll down</p>
           <p>You will see how images are loading</p>
-          <div className="content__buffer" />
+          <div className={s.contentBuffer} />
         </div>
 
-        <ul className="content__images">
+        <ul>
           <Image
             src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80"
             websiteLink="https://unsplash.com/@mar28mar"
@@ -62,7 +39,7 @@ class Content extends Component {
             author="Callum Stewart"
           />
         </ul>
-      </Main>
+      </main>
     );
   }
 }
