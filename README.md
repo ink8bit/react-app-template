@@ -16,7 +16,7 @@ nvm use && npm i
 npm run dev
 ```
 
-2. Open `localhost:1234` in your favorite browser
+2. Open `localhost:3000` in your favorite browser
 
 ## Build for production
 
