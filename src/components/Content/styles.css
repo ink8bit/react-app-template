@@ -1,0 +1,21 @@
+.content {
+  padding: 10px var(--padding);
+  height: calc(100% - var(--header-height) - var(--footer-height));
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contentBuffer {
+  height: 1000px;
+}
+
+.contentTitle {
+  font-size: 20px;
+  margin: 0 0 20px;
+  padding: 0;
+  text-transform: capitalize;
+}
