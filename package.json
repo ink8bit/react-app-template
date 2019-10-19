@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "prestart": "npm run build",
-    "start": "NODE_ENV=production cd ./dist && npx serve",
+    "start": "NODE_ENV=production cd ./build && npx serve",
     "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
     "prebuild": "npm run lint && npm run test",
     "build": "webpack --config webpack.prod.js",
