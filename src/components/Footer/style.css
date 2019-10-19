@@ -1,0 +1,27 @@
+.footer {
+  --footer-height: 100px;
+
+  background-color: #0c0c0c;
+  display: flex;
+  padding: 10px var(--padding);
+  justify-content: center;
+  align-items: center;
+  height: var(--footer-height);
+}
+
+.footerItem {
+  display: inline-block;
+}
+
+.footerItem + .footerItem {
+  margin-left: 20px;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
