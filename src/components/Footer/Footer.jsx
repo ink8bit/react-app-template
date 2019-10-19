@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from '@reach/router';
 
 import s from './style.css';
 
@@ -8,19 +9,19 @@ class Footer extends Component {
       <footer className={s.footer}>
         <ul>
           <li className={s.footerItem}>
-            <a className={s.footerLink} href="/">
+            <Link className={s.footerLink} to="/">
               footer link 1
-            </a>
+            </Link>
           </li>
           <li className={s.footerItem}>
-            <a className={s.footerLink} href="/">
+            <Link className={s.footerLink} to="/">
               footer link 2
-            </a>
+            </Link>
           </li>
           <li className={s.footerItem}>
-            <a className={s.footerLink} href="/">
+            <Link className={s.footerLink} to="/">
               footer link 3
-            </a>
+            </Link>
           </li>
         </ul>
       </footer>

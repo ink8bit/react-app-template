@@ -5,21 +5,27 @@ exports[`snapshot 1`] = `
   <ul>
     <li>
       <a
+        aria-current="page"
         href="/"
+        onClick={[Function]}
       >
         footer link 1
       </a>
     </li>
     <li>
       <a
+        aria-current="page"
         href="/"
+        onClick={[Function]}
       >
         footer link 2
       </a>
     </li>
     <li>
       <a
+        aria-current="page"
         href="/"
+        onClick={[Function]}
       >
         footer link 3
       </a>
