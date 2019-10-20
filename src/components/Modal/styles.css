@@ -1,0 +1,38 @@
+.modalContainer {
+  background: #fbb335;
+  color: #232222;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  padding: var(--padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.modalTitle {
+  font-size: 20px;
+}
+
+.modalButtons {
+  display: flex;
+  align-self: flex-end;
+}
+
+.modalButton {
+  padding: 4px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.modalButton:hover {
+  box-shadow: 1px 1px 1px 1px #84720c;
+}
+
+.modalButton + .modalButton {
+  margin-left: 10px;
+}
