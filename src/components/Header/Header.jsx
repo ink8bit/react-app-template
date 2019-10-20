@@ -1,18 +1,13 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import { Link } from '@reach/router';
-import Loadable from 'react-loadable';
 
 import Modal from './../Modal/Modal.jsx';
 import s from './styles.css';
 
-const Loading = () => <span>loading...</span>;
-const LoadableContent = Loadable({
-  loader: () => import('./../Modal/ModalContent.jsx'),
-  loading: Loading,
-});
+const LoadableContent = React.lazy(() => import('./../Modal/ModalContent.jsx'));
 
 class Header extends Component {
   state = {
@@ -30,7 +25,9 @@ class Header extends Component {
 
     const ModalLayout = showModal ? (
       <Modal>
-        <LoadableContent toggleModal={this.toggleModal} name={name} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LoadableContent toggleModal={this.toggleModal} name={name} />
+        </Suspense>
       </Modal>
     ) : null;
 
