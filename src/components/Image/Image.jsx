@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-const classNames = require('classnames');
+import classNames from 'classnames';
 
 import s from './styles.css';
 
