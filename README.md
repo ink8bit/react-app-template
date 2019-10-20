@@ -48,9 +48,9 @@ npx browserslist
 - [Jest](https://jestjs.io/)
 - [React](https://reactjs.org/)
 - [Reach router](https://reach.tech/router)
-- [Emotion](https://emotion.sh/)
 - [husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
+- [classnames](https://github.com/JedWatson/classnames)
 
 ## Features
 
