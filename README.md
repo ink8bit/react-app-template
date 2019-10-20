@@ -51,6 +51,7 @@ npx browserslist
 - [husky](https://github.com/typicode/husky)
 - [lint-staged](https://github.com/okonet/lint-staged)
 - [classnames](https://github.com/JedWatson/classnames)
+- [stylelint](https://github.com/stylelint/stylelint)
 
 ## Features
 
