@@ -47,7 +47,6 @@ npx browserslist
 - [Webpack](https://webpack.js.org/)
 - [Jest](https://jestjs.io/)
 - [React](https://reactjs.org/)
-- [React loadable](https://github.com/jamiebuilds/react-loadable)
 - [Reach router](https://reach.tech/router)
 - [Emotion](https://emotion.sh/)
 - [husky](https://github.com/typicode/husky)
@@ -57,3 +56,4 @@ npx browserslist
 
 - Lazy-loading images using [IntersectionObserver](https://developers.google.com/web/updates/2016/04/intersectionobserver)
 - [React Portals](https://reactjs.org/docs/portals.html) for modal window
+- [React.lazy](https://reactjs.org/docs/code-splitting.html#reactlazy)
