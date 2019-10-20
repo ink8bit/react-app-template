@@ -1,60 +1,27 @@
 import React, { Component } from 'react';
-import styled from '@emotion/styled';
+const classNames = require('classnames');
 
-import color from './../../styles/color';
-
-const ImageContainer = styled.li`
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 50px;
-
-  & + & {
-    margin-top: 500px;
-  }
-
-  img {
-    width: 100%;
-    background: lightgray;
-  }
-
-  .image__link {
-    color: ${color.LINK};
-  }
-
-  .image__info {
-    display: flex;
-    align-items: baseline;
-    margin-top: 10px;
-  }
-
-  .image__author {
-    margin: 0;
-  }
-
-  .image__author + .image__link {
-    margin-left: 10px;
-  }
-`;
+import s from './styles.css';
 
 class Image extends Component {
   render() {
     return (
-      <ImageContainer>
-        <img className="image image_lazy" src="" data-src={this.props.src} alt="" />
-        <div className="image__info">
-          <p className="image__author">{this.props.author}</p>
+      <li className={s.imageContainer}>
+        <img className={classNames(s.image, 'lazy')} src="" data-src={this.props.src} alt="" />
+
+        <div className={s.imageInfo}>
+          <p className={s.imageAuthor}>{this.props.author}</p>
           <a
             href={this.props.websiteLink}
             title="unsplash.com link"
             target="_blank"
             rel="noopener noreferrer"
-            className="image__link"
+            className={s.imageLink}
           >
             Unsplash link
           </a>
         </div>
-      </ImageContainer>
+      </li>
     );
   }
 }

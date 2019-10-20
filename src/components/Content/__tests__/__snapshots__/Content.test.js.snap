@@ -16,25 +16,18 @@ exports[`snapshot 1`] = `
     <div />
   </div>
   <ul>
-    <li
-      className="css-1w3z3hb"
-    >
+    <li>
       <img
         alt=""
-        className="image image_lazy"
+        className="lazy"
         data-src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80"
         src=""
       />
-      <div
-        className="image__info"
-      >
-        <p
-          className="image__author"
-        >
+      <div>
+        <p>
           Mar Bustos
         </p>
         <a
-          className="image__link"
           href="https://unsplash.com/@mar28mar"
           rel="noopener noreferrer"
           target="_blank"
@@ -44,25 +37,18 @@ exports[`snapshot 1`] = `
         </a>
       </div>
     </li>
-    <li
-      className="css-1w3z3hb"
-    >
+    <li>
       <img
         alt=""
-        className="image image_lazy"
+        className="lazy"
         data-src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
         src=""
       />
-      <div
-        className="image__info"
-      >
-        <p
-          className="image__author"
-        >
+      <div>
+        <p>
           John O'Nolan
         </p>
         <a
-          className="image__link"
           href="https://unsplash.com/@johnonolan"
           rel="noopener noreferrer"
           target="_blank"
@@ -72,25 +58,18 @@ exports[`snapshot 1`] = `
         </a>
       </div>
     </li>
-    <li
-      className="css-1w3z3hb"
-    >
+    <li>
       <img
         alt=""
-        className="image image_lazy"
+        className="lazy"
         data-src="https://images.unsplash.com/photo-1516898263-bc9e1a4e7e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
         src=""
       />
-      <div
-        className="image__info"
-      >
-        <p
-          className="image__author"
-        >
+      <div>
+        <p>
           Callum Stewart
         </p>
         <a
-          className="image__link"
           href="https://unsplash.com/@callumstewartni"
           rel="noopener noreferrer"
           target="_blank"
