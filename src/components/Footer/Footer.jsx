@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from '@reach/router';
 
-import s from './style.css';
+import s from './styles.css';
 
 class Footer extends Component {
   render() {

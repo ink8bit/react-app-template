@@ -13,14 +13,13 @@
     "prebuild": "npm run lint && npm run test",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix \"**/*.{js,jsx}\"",
-    "lint:css": "stylelint --fix src/**/*.css",
+    "lint:css": "stylelint --fix \"./src/**/*.css\"",
     "test": "jest --onlyChanged --passWithNoTests",
     "test:all": "jest",
     "test:update": "jest -u",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "format": "prettier --config  ./.prettierrc \"./src/*.{js,jsx,json,css,html}\" --write",
-    "format:check": "prettier --list-different \"./src/*.{js,jsx,json,css,html}\""
+    "format": "prettier \"./src/**/*.{js,jsx,css,html,json}\" --write --only-changed"
   },
   "husky": {
     "hooks": {
