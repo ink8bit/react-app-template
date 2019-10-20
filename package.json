@@ -13,6 +13,7 @@
     "prebuild": "npm run lint && npm run test",
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix \"**/*.{js,jsx}\"",
+    "lint:css": "stylelint --fix src/**/*.css",
     "test": "jest --onlyChanged --passWithNoTests",
     "test:all": "jest",
     "test:update": "jest -u",
@@ -29,8 +30,8 @@
   "lint-staged": {
     "*.js": [
       "npm run format",
-      "eslint --fix",
       "npm run lint",
+      "npm run lint:css",
       "git add",
       "npm t"
     ]
@@ -62,6 +63,8 @@
     "react-test-renderer": "^16.10.2",
     "serve": "^11.2.0",
     "style-loader": "^1.0.0",
+    "stylelint": "^11.1.1",
+    "stylelint-config-recommended": "^3.0.0",
     "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.9",
