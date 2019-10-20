@@ -24,7 +24,7 @@ module.exports = {
   rules: {
     'react/prop-types': 0,
     'jsx-a11y/label-has-for': 0,
-    'no-console': 1,
+    'comma-dangle': ['error', 'always-multiline'],
   },
   plugins: ['react', 'import', 'jsx-a11y'],
   settings: {
