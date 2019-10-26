@@ -11,12 +11,12 @@ const LoadableContent = React.lazy(() => import('./../Modal/ModalContent.jsx'));
 
 class Header extends Component {
   state = {
-    showModal: false,
+    showModal: false
   };
 
   toggleModal = () => {
     this.setState({
-      showModal: !this.state.showModal,
+      showModal: !this.state.showModal
     });
   };
 
