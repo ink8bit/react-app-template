@@ -21,16 +21,6 @@ module.exports = {
     node: true,
     jest: true,
   },
-  rules: {
-    'react/prop-types': 0,
-    'jsx-a11y/label-has-for': 0,
-    'comma-dangle': ['error', 'always-multiline'],
-  },
-  plugins: ['react', 'import', 'jsx-a11y'],
-  settings: {
-    react: {
-      // https://github.com/yannickcr/eslint-plugin-react/issues/1955
-      version: require('react/package.json').version,
-    },
-  },
+  rules: {},
+  plugins: ['prettier', 'react', 'import', 'jsx-a11y'],
 };
