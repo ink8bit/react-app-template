@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import s from './styles.css';
 
@@ -25,5 +26,15 @@ class Image extends Component {
     );
   }
 }
+
+Image.defaultPropTypes = {
+  websiteLink: ''
+};
+
+Image.propTypes = {
+  websiteLink: PropTypes.string,
+  author: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired
+};
 
 export default Image;

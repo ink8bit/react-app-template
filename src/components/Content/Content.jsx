@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import Image from './../Image/Image.jsx';
 import s from './styles.css';
@@ -43,5 +44,13 @@ class Content extends Component {
     );
   }
 }
+
+Content.defaultProps = {
+  message: ''
+};
+
+Content.propTypes = {
+  message: PropTypes.string
+};
 
 export default Content;
