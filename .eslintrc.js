@@ -1,4 +1,11 @@
+/**
+ * Configuring ESLint
+ * @see {@link https://eslint.org/docs/user-guide/configuring}
+ */
 module.exports = {
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#extending-configuration-files}
+   */
   extends: [
     'eslint:recommended',
     'plugin:import/errors',
@@ -7,7 +14,23 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-globals}
+   */
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser}
+   */
   parser: 'babel-eslint',
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options}
+   */
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
@@ -15,12 +38,24 @@ module.exports = {
       jsx: true,
     },
   },
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-environments}
+   */
   env: {
     es6: true,
     browser: true,
     node: true,
     jest: true,
   },
-  rules: {},
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-plugins}
+   */
   plugins: ['prettier', 'react', 'import', 'jsx-a11y'],
+
+  /**
+   * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-rules}
+   */
+  rules: {},
 };
