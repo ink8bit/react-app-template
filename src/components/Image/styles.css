@@ -1,6 +1,14 @@
 .image {
+  display: block;
   width: 100%;
-  background: lightgray;
+  height: auto;
+  object-fit: contain;
+}
+
+.imageFallback {
+  background: #1c1c1c;
+  width: 100%;
+  height: 300px;
 }
 
 .imageLink {

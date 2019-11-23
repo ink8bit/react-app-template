@@ -27,6 +27,31 @@ exports[`snapshot 1`] = `
     <li
       className="image"
     >
+      <div
+        className="imageFallback"
+      />
+      <div
+        className="imageInfo"
+      >
+        <p
+          className="imageAuthor"
+        >
+          Unknown
+        </p>
+        <a
+          className="imageLink"
+          href=""
+          rel="noopener noreferrer"
+          target="_blank"
+          title="unsplash.com link"
+        >
+          Unsplash link
+        </a>
+      </div>
+    </li>
+    <li
+      className="image"
+    >
       <img
         alt=""
         className="image lazy"

@@ -9,7 +9,12 @@ function Image(props) {
 
   return (
     <>
-      <img className={classNames(s.image, 'lazy')} src="" data-src={src} alt="" />
+      {src ? (
+        <img className={classNames(s.image, 'lazy')} src="" data-src={src} alt="" />
+      ) : (
+        <div className={s.imageFallback} />
+      )}
+
       <div className={s.imageInfo}>
         <p className={s.imageAuthor}>{author}</p>
         <a
