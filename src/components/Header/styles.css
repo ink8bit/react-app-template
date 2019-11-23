@@ -1,7 +1,6 @@
 .header {
   --header-height: 70px;
   --header-bg: #0c0c0c;
-
   background-color: var(--header-bg);
   padding: 10px var(--padding);
   height: var(--header-height);
