@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 import Image from './../Image/Image.jsx';
@@ -30,38 +30,32 @@ const images = [
   }
 ];
 
-class Content extends Component {
-  constructor(props) {
-    super(props);
+function Content(props) {
+  const { message } = props;
 
-    this.message = props.message;
-  }
-
-  render() {
-    const imageList = images.map(image => {
-      const { src, websiteLink, author } = image;
-      return (
-        <li key={src} className={s.image}>
-          <Image src={src} websiteLink={websiteLink} author={author} />
-        </li>
-      );
-    });
-
+  const imageList = images.map(image => {
+    const { src, websiteLink, author } = image;
     return (
-      <main className={s.content}>
-        <h1 className={s.title}>{this.props.message}</h1>
-
-        <div>
-          <p>Open network panel</p>
-          <p>Scroll down</p>
-          <p>You will see how images are loading</p>
-          <div className={s.buffer} />
-        </div>
-
-        <ul>{imageList}</ul>
-      </main>
+      <li key={src} className={s.image}>
+        <Image src={src} websiteLink={websiteLink} author={author} />
+      </li>
     );
-  }
+  });
+
+  return (
+    <main className={s.content}>
+      <h1 className={s.title}>{message}</h1>
+
+      <div>
+        <p>Open network panel</p>
+        <p>Scroll down</p>
+        <p>You will see how images are loading</p>
+        <div className={s.buffer} />
+      </div>
+
+      <ul>{imageList}</ul>
+    </main>
+  );
 }
 
 Content.defaultProps = {
