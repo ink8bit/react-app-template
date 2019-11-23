@@ -5,17 +5,20 @@
   --link-color: #85cee6;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 html,
 body {
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 ul {
