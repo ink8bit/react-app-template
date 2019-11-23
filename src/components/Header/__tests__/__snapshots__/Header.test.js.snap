@@ -5,22 +5,21 @@ exports[`snapshot 1`] = `
   className="header"
 >
   <div
-    className="headerWrapper"
+    className="wrapper"
   >
     <img
       alt="logo"
-      className="headerLogo"
-      onClick={[Function]}
+      className="logo"
       src=""
       title="logo"
     />
     <ul>
       <li
-        className="headerItem"
+        className="item"
       >
         <a
           aria-current="page"
-          className="headerLink"
+          className="link"
           href="/"
           onClick={[Function]}
         >
@@ -28,10 +27,10 @@ exports[`snapshot 1`] = `
         </a>
       </li>
       <li
-        className="headerItem"
+        className="item"
       >
         <a
-          className="headerLink"
+          className="link"
           href="/search"
           onClick={[Function]}
         >

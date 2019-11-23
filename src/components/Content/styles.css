@@ -30,3 +30,16 @@
 .image + .image {
   margin-top: 500px;
 }
+
+.button {
+  border-radius: 4px;
+  padding: 20px 10px;
+  font-size: 16px;
+  line-height: 16px;
+  max-width: 150px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: lightcyan;
+}

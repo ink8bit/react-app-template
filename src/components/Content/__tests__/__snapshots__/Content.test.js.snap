@@ -9,6 +9,13 @@ exports[`snapshot 1`] = `
   >
     
   </h1>
+  <button
+    className="button"
+    onClick={[Function]}
+    type="button"
+  >
+    Show modal
+  </button>
   <div>
     <p>
       Open network panel

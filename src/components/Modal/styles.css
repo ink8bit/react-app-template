@@ -1,4 +1,4 @@
-.modalContainer {
+.container {
   background: #fbb335;
   color: #232222;
   position: absolute;
@@ -14,25 +14,26 @@
   border-radius: 4px;
 }
 
-.modalTitle {
+.title {
   font-size: 20px;
 }
 
-.modalButtons {
+.buttons {
   display: flex;
   align-self: flex-end;
 }
 
-.modalButton {
+.button {
   padding: 4px 8px;
   border-radius: 4px;
   flex-shrink: 0;
   cursor: pointer;
 }
-.modalButton:hover {
+
+.button:hover {
   box-shadow: 1px 1px 1px 1px #84720c;
 }
 
-.modalButton + .modalButton {
+.button + .button {
   margin-left: 10px;
 }

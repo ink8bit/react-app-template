@@ -2,25 +2,27 @@
 
 exports[`snapshot 1`] = `
 <div
-  className="modalContainer"
+  className="container"
 >
   <h1
-    className="modalTitle"
+    className="title"
   >
     This is an example of a modal window
   </h1>
   <div
-    className="modalButtons"
+    className="buttons"
   >
     <button
-      className="modalButton"
-      onClick={true}
+      className="button"
+      onClick={[Function]}
+      type="button"
     >
       Ok
     </button>
     <button
-      className="modalButton"
-      onClick={true}
+      className="button"
+      onClick={[Function]}
+      type="button"
     >
       Close
     </button>
