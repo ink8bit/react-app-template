@@ -28,18 +28,18 @@ exports[`snapshot 1`] = `
       className="image"
     >
       <div
-        className="imageFallback"
+        className="fallback"
       />
       <div
-        className="imageInfo"
+        className="info"
       >
         <p
-          className="imageAuthor"
+          className="author"
         >
           Unknown
         </p>
         <a
-          className="imageLink"
+          className="link"
           href=""
           rel="noopener noreferrer"
           target="_blank"
@@ -59,15 +59,15 @@ exports[`snapshot 1`] = `
         src=""
       />
       <div
-        className="imageInfo"
+        className="info"
       >
         <p
-          className="imageAuthor"
+          className="author"
         >
           Mar Bustos
         </p>
         <a
-          className="imageLink"
+          className="link"
           href="https://unsplash.com/@mar28mar"
           rel="noopener noreferrer"
           target="_blank"
@@ -87,15 +87,15 @@ exports[`snapshot 1`] = `
         src=""
       />
       <div
-        className="imageInfo"
+        className="info"
       >
         <p
-          className="imageAuthor"
+          className="author"
         >
           John O'Nolan
         </p>
         <a
-          className="imageLink"
+          className="link"
           href="https://unsplash.com/@johnonolan"
           rel="noopener noreferrer"
           target="_blank"
@@ -115,15 +115,15 @@ exports[`snapshot 1`] = `
         src=""
       />
       <div
-        className="imageInfo"
+        className="info"
       >
         <p
-          className="imageAuthor"
+          className="author"
         >
           Callum Stewart
         </p>
         <a
-          className="imageLink"
+          className="link"
           href="https://unsplash.com/@callumstewartni"
           rel="noopener noreferrer"
           target="_blank"

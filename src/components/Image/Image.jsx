@@ -12,17 +12,17 @@ function Image(props) {
       {src ? (
         <img className={classNames(s.image, 'lazy')} src="" data-src={src} alt="" />
       ) : (
-        <div className={s.imageFallback} />
+        <div className={s.fallback} />
       )}
 
-      <div className={s.imageInfo}>
-        <p className={s.imageAuthor}>{author}</p>
+      <div className={s.info}>
+        <p className={s.author}>{author}</p>
         <a
           href={websiteLink}
           title="unsplash.com link"
           target="_blank"
           rel="noopener noreferrer"
-          className={s.imageLink}
+          className={s.link}
         >
           Unsplash link
         </a>
