@@ -14,7 +14,7 @@
     "build": "webpack --config webpack.prod.js",
     "lint": "eslint --fix \"**/*.{js,jsx}\"",
     "lint:css": "stylelint --fix \"./src/**/*.css\"",
-    "test": "jest --onlyChanged --passWithNoTests",
+    "test": "jest --passWithNoTests",
     "test:all": "jest",
     "test:update": "jest -u",
     "test:watch": "jest --watch",
@@ -23,7 +23,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged && npm t"
     }
   },
   "devDependencies": {

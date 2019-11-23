@@ -1,6 +1,5 @@
 .footer {
   --footer-height: 100px;
-
   background-color: #0c0c0c;
   display: flex;
   padding: 10px var(--padding);

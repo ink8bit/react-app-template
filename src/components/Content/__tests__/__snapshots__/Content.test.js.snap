@@ -5,7 +5,7 @@ exports[`snapshot 1`] = `
   className="content"
 >
   <h1
-    className="contentTitle"
+    className="title"
   >
     
   </h1>
@@ -20,12 +20,12 @@ exports[`snapshot 1`] = `
       You will see how images are loading
     </p>
     <div
-      className="contentBuffer"
+      className="buffer"
     />
   </div>
   <ul>
     <li
-      className="imageContainer"
+      className="image"
     >
       <img
         alt=""
@@ -53,7 +53,7 @@ exports[`snapshot 1`] = `
       </div>
     </li>
     <li
-      className="imageContainer"
+      className="image"
     >
       <img
         alt=""
@@ -81,7 +81,7 @@ exports[`snapshot 1`] = `
       </div>
     </li>
     <li
-      className="imageContainer"
+      className="image"
     >
       <img
         alt=""
