@@ -6,6 +6,11 @@ import s from './styles.css';
 
 const images = [
   {
+    src: '',
+    websiteLink: '',
+    author: 'Unknown'
+  },
+  {
     src:
       'https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80',
     websiteLink: 'https://unsplash.com/@mar28mar',
