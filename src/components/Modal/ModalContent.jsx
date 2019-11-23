@@ -3,22 +3,39 @@ import PropTypes from 'prop-types';
 
 import s from './styles.css';
 
-const ModalContent = props => (
-  <div className={s.modalContainer}>
-    <h1 className={s.modalTitle}>This is an example of a modal window</h1>
-    <div className={s.modalButtons}>
-      <button className={s.modalButton} onClick={props.toggleModal}>
-        Ok
-      </button>
-      <button className={s.modalButton} onClick={props.toggleModal}>
-        Close
-      </button>
+function ModalContent(props) {
+  const { setModalVisible } = props;
+
+  return (
+    <div className={s.container}>
+      <h1 className={s.title}>This is an example of a modal window</h1>
+      <div className={s.buttons}>
+        <button
+          className={s.button}
+          type="button"
+          onClick={() => {
+            setModalVisible(false);
+          }}
+        >
+          Ok
+        </button>
+
+        <button
+          className={s.button}
+          type="button"
+          onClick={() => {
+            setModalVisible(false);
+          }}
+        >
+          Close
+        </button>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 ModalContent.propTypes = {
-  toggleModal: PropTypes.bool.isRequired
+  setModalVisible: PropTypes.func.isRequired
 };
 
 export default ModalContent;

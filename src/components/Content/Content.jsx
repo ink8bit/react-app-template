@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Suspense, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Image from './../Image/Image.jsx';
 import s from './styles.css';
+import Modal from './../Modal/Modal.jsx';
+
+const LoadableContent = React.lazy(() => import('./../Modal/ModalContent.jsx'));
 
 const images = [
   {
@@ -31,6 +34,8 @@ const images = [
 ];
 
 function Content(props) {
+  const [isModalVisible, setModalVisible] = useState(false);
+
   const { message } = props;
 
   const imageList = images.map(image => {
@@ -45,6 +50,24 @@ function Content(props) {
   return (
     <main className={s.content}>
       <h1 className={s.title}>{message}</h1>
+
+      <button
+        className={s.button}
+        type="button"
+        onClick={() => {
+          setModalVisible(!isModalVisible);
+        }}
+      >
+        Show modal
+      </button>
+
+      {isModalVisible && (
+        <Modal>
+          <Suspense fallback={<div>Loading...</div>}>
+            <LoadableContent setModalVisible={setModalVisible} />
+          </Suspense>
+        </Modal>
+      )}
 
       <div>
         <p>Open network panel</p>

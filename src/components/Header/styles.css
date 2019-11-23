@@ -8,15 +8,15 @@
   justify-content: center;
 }
 
-.headerItem {
+.item {
   display: inline-block;
 }
 
-.headerItem + .headerItem {
+.item + .item {
   margin-left: 20px;
 }
 
-.headerWrapper {
+.wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,17 +25,17 @@
   max-width: 1000px;
 }
 
-.headerLogo {
+.logo {
   background-color: #848484;
   width: 70px;
   height: 30px;
 }
 
-.headerLink {
+.link {
   text-decoration: none;
   color: var(--link-color);
 }
 
-.headerLink:hover {
+.link:hover {
   text-decoration: underline;
 }
