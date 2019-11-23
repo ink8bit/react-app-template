@@ -1,29 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<footer>
+<footer
+  className="footer"
+>
   <ul>
-    <li>
+    <li
+      className="footerItem"
+    >
       <a
         aria-current="page"
+        className="footerLink"
         href="/"
         onClick={[Function]}
       >
         footer link 1
       </a>
     </li>
-    <li>
+    <li
+      className="footerItem"
+    >
       <a
         aria-current="page"
+        className="footerLink"
         href="/"
         onClick={[Function]}
       >
         footer link 2
       </a>
     </li>
-    <li>
+    <li
+      className="footerItem"
+    >
       <a
         aria-current="page"
+        className="footerLink"
         href="/"
         onClick={[Function]}
       >

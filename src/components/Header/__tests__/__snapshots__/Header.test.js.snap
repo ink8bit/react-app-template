@@ -1,26 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<header>
-  <div>
+<header
+  className="header"
+>
+  <div
+    className="headerWrapper"
+  >
     <img
       alt="logo"
+      className="headerLogo"
       onClick={[Function]}
       src=""
       title="logo"
     />
     <ul>
-      <li>
+      <li
+        className="headerItem"
+      >
         <a
           aria-current="page"
+          className="headerLink"
           href="/"
           onClick={[Function]}
         >
           Main
         </a>
       </li>
-      <li>
+      <li
+        className="headerItem"
+      >
         <a
+          className="headerLink"
           href="/search"
           onClick={[Function]}
         >

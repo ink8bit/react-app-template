@@ -1,8 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`snapshot 1`] = `
-<main>
-  <h1 />
+<main
+  className="content"
+>
+  <h1
+    className="contentTitle"
+  >
+    
+  </h1>
   <div>
     <p>
       Open network panel
@@ -13,21 +19,30 @@ exports[`snapshot 1`] = `
     <p>
       You will see how images are loading
     </p>
-    <div />
+    <div
+      className="contentBuffer"
+    />
   </div>
   <ul>
-    <li>
+    <li
+      className="imageContainer"
+    >
       <img
         alt=""
-        className="lazy"
+        className="image lazy"
         data-src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80"
         src=""
       />
-      <div>
-        <p>
+      <div
+        className="imageInfo"
+      >
+        <p
+          className="imageAuthor"
+        >
           Mar Bustos
         </p>
         <a
+          className="imageLink"
           href="https://unsplash.com/@mar28mar"
           rel="noopener noreferrer"
           target="_blank"
@@ -37,18 +52,25 @@ exports[`snapshot 1`] = `
         </a>
       </div>
     </li>
-    <li>
+    <li
+      className="imageContainer"
+    >
       <img
         alt=""
-        className="lazy"
+        className="image lazy"
         data-src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
         src=""
       />
-      <div>
-        <p>
+      <div
+        className="imageInfo"
+      >
+        <p
+          className="imageAuthor"
+        >
           John O'Nolan
         </p>
         <a
+          className="imageLink"
           href="https://unsplash.com/@johnonolan"
           rel="noopener noreferrer"
           target="_blank"
@@ -58,18 +80,25 @@ exports[`snapshot 1`] = `
         </a>
       </div>
     </li>
-    <li>
+    <li
+      className="imageContainer"
+    >
       <img
         alt=""
-        className="lazy"
+        className="image lazy"
         data-src="https://images.unsplash.com/photo-1516898263-bc9e1a4e7e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80"
         src=""
       />
-      <div>
-        <p>
+      <div
+        className="imageInfo"
+      >
+        <p
+          className="imageAuthor"
+        >
           Callum Stewart
         </p>
         <a
+          className="imageLink"
           href="https://unsplash.com/@callumstewartni"
           rel="noopener noreferrer"
           target="_blank"
