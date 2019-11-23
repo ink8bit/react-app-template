@@ -8,19 +8,19 @@
   height: var(--footer-height);
 }
 
-.footerItem {
+.item {
   display: inline-block;
 }
 
-.footerItem + .footerItem {
+.item + .item {
   margin-left: 20px;
 }
 
-.footerLink {
+.link {
   text-decoration: none;
   color: var(--link-color);
 }
 
-.footerLink:hover {
+.link:hover {
   text-decoration: underline;
 }

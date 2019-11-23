@@ -6,11 +6,11 @@ exports[`snapshot 1`] = `
 >
   <ul>
     <li
-      className="footerItem"
+      className="item"
     >
       <a
         aria-current="page"
-        className="footerLink"
+        className="link"
         href="/"
         onClick={[Function]}
       >
@@ -18,11 +18,11 @@ exports[`snapshot 1`] = `
       </a>
     </li>
     <li
-      className="footerItem"
+      className="item"
     >
       <a
         aria-current="page"
-        className="footerLink"
+        className="link"
         href="/"
         onClick={[Function]}
       >
@@ -30,11 +30,11 @@ exports[`snapshot 1`] = `
       </a>
     </li>
     <li
-      className="footerItem"
+      className="item"
     >
       <a
         aria-current="page"
-        className="footerLink"
+        className="link"
         href="/"
         onClick={[Function]}
       >
