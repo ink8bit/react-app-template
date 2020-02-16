@@ -11,20 +11,16 @@
     "start": "NODE_ENV=production cd ./build && npx serve",
     "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
     "prebuild": "npm run lint && npm run test",
-    "build": "webpack --config webpack.prod.js",
-    "lint": "eslint --fix \"**/*.{js,jsx}\"",
-    "lint:css": "stylelint --fix \"./src/**/*.css\"",
-    "test": "jest --passWithNoTests",
-    "test:all": "jest",
+    "build": "npm run compile",
+    "compile": "webpack --config webpack.prod.js",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:css": "stylelint \"./src/**/*.css\"",
+    "test": "jest --forceExit",
     "test:update": "jest -u",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "format": "prettier \"./src/**/*.{js,jsx,css,html,json}\" --write --only-changed"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm t"
-    }
+    "prettier": "prettier \"./src/**/*.{js,jsx,css,html,json}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
