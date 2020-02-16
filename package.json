@@ -18,6 +18,7 @@
     "test": "jest --forceExit",
     "test:update": "jest -u",
     "test:watch": "jest --watch",
+    "test:ci": "npm t -- --config jest.config.ci.js",
     "prettier": "prettier \"./src/**/*.{js,jsx,css,html,json}\"",
     "format": "npm run prettier -- --write",
     "format:check": "npm run prettier -- --list-different"

@@ -3,9 +3,12 @@
  * @see {@link https://jestjs.io/docs/en/configuration}
  */
 module.exports = {
-  bail: true,
-  notify: true,
+  bail: false,
+  notify: false,
+
+  collectCoverage: true,
   collectCoverageFrom: ['src/**/*.{js,jsx,mjs}'],
+
   testPathIgnorePatterns: ['/node_modules/'],
 
   moduleNameMapper: {
