@@ -55,6 +55,18 @@ module.exports = {
   plugins: ['prettier', 'react', 'import', 'jsx-a11y'],
 
   /**
+   * @see {@link https://github.com/benmosher/eslint-plugin-import#importextensions}
+   */
+  settings: {
+    /**
+     * @see {@link https://github.com/yannickcr/eslint-plugin-react#configuration}
+     */
+    react: {
+      version: 'detect',
+    },
+  },
+
+  /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-rules}
    */
   rules: {},
