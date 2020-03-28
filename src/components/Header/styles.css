@@ -1,9 +1,6 @@
 .header {
-  --header-height: 70px;
-  --header-bg: #0c0c0c;
-  background-color: var(--header-bg);
+  background-color: var(--secondary-background-color);
   padding: 10px var(--padding);
-  height: var(--header-height);
   display: flex;
   justify-content: center;
 }
