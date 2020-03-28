@@ -25,7 +25,7 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Modal;

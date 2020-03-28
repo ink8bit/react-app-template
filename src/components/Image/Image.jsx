@@ -32,13 +32,13 @@ function Image(props) {
 }
 
 Image.defaultPropTypes = {
-  websiteLink: ''
+  websiteLink: '',
 };
 
 Image.propTypes = {
   websiteLink: PropTypes.string,
   author: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired
+  src: PropTypes.string.isRequired,
 };
 
 export default Image;
