@@ -11,12 +11,12 @@ function App() {
   return (
     <div className={s.wrapper}>
       <Header />
-      <main className={s.mainContent}>
+      <div className={s.mainContent}>
         <Router>
           <Content path="/" message="main" />
           <Content path="/search" message="search" />
         </Router>
-      </main>
+      </div>
       <Footer />
     </div>
   );
