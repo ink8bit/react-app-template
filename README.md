@@ -1,5 +1,7 @@
 # React app template
 
+![Node.js CI](https://github.com/ink8bit/react-app-template/workflows/Node.js%20CI/badge.svg)
+
 It's a template repo for creating React web applications.
 
 ## Getting started
