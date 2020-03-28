@@ -35,7 +35,7 @@ function ModalContent(props) {
 }
 
 ModalContent.propTypes = {
-  setModalVisible: PropTypes.func.isRequired
+  setModalVisible: PropTypes.func.isRequired,
 };
 
 export default ModalContent;

@@ -11,26 +11,26 @@ const images = [
   {
     src: '',
     websiteLink: '',
-    author: 'Unknown'
+    author: 'Unknown',
   },
   {
     src:
       'https://images.unsplash.com/photo-1549558549-415fe4c37b60?ixlib=rb-1.2.1&auto=format&fit=crop&w=2765&q=80',
     websiteLink: 'https://unsplash.com/@mar28mar',
-    author: 'Mar Bustos'
+    author: 'Mar Bustos',
   },
   {
     src:
       'https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80',
     websiteLink: 'https://unsplash.com/@johnonolan',
-    author: "John O'Nolan"
+    author: "John O'Nolan",
   },
   {
     src:
       'https://images.unsplash.com/photo-1516898263-bc9e1a4e7e8d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1867&q=80',
     websiteLink: 'https://unsplash.com/@callumstewartni',
-    author: 'Callum Stewart'
-  }
+    author: 'Callum Stewart',
+  },
 ];
 
 function Content(props) {
@@ -38,7 +38,7 @@ function Content(props) {
 
   const { message } = props;
 
-  const imageList = images.map(image => {
+  const imageList = images.map((image) => {
     const { src, websiteLink, author } = image;
     return (
       <li key={src} className={s.image}>
@@ -82,11 +82,11 @@ function Content(props) {
 }
 
 Content.defaultProps = {
-  message: ''
+  message: '',
 };
 
 Content.propTypes = {
-  message: PropTypes.string
+  message: PropTypes.string,
 };
 
 export default Content;
