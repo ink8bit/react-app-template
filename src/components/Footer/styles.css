@@ -1,11 +1,9 @@
 .footer {
-  --footer-height: 100px;
-  background-color: #0c0c0c;
+  background-color: var(--secondary-background-color);
   display: flex;
   padding: 10px var(--padding);
   justify-content: center;
   align-items: center;
-  height: var(--footer-height);
 }
 
 .item {
